@@ -3,20 +3,20 @@ package Arrays;
 public class CheckForSortedArray {
     static void isArraySorted(int[] arr){
         boolean isSorted = true;
-
-        // here we have to check for both ascending and descending order
         boolean descendingOrderCheck = arr[0] > arr[1];
+        // here we have to check for both ascending and descending order
 
         for (int i = 0; i < arr.length; i++) {
-            // if checking for descending order
-            if (descendingOrderCheck && arr[i] < arr[i + 1]) {
-                isSorted = false;
-                break;
-            } else if(!descendingOrderCheck && arr[i] > arr[i + 1]) {
-                isSorted = false;
-                break;
+            for (int j = i + 1; j < arr.length ; j++) {
+                // if checking for descending order
+                if (descendingOrderCheck && arr[i] < arr[j]){
+                    isSorted = false;
+                    break;
+                } else if(!descendingOrderCheck && arr[i] > arr[j]) {
+                    isSorted = false;
+                    break;
+                }
             }
-
         }
 
         System.out.println(isSorted);
