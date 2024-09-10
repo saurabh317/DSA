@@ -3,11 +3,9 @@ package Arrays;
 public class CheckForSortedArray {
     static void isArraySorted(int[] arr){
         boolean isSorted = true;
-        boolean descendingOrderCheck = false;
+
         // here we have to check for both ascending and descending order
-        if (arr[0] > arr[1]) {
-            descendingOrderCheck = true;
-        }
+        boolean descendingOrderCheck = arr[0] > arr[1];
 
         for (int i = 0; i < arr.length; i++) {
             for (int j = i + 1; j < arr.length ; j++) {
