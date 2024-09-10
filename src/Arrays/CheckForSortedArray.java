@@ -12,8 +12,10 @@ public class CheckForSortedArray {
                 // if checking for descending order
                 if (descendingOrderCheck && arr[i] < arr[j]){
                     isSorted = false;
+                    break;
                 } else if(!descendingOrderCheck && arr[i] > arr[j]) {
                     isSorted = false;
+                    break;
                 }
             }
         }
