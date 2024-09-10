@@ -8,16 +8,15 @@ public class CheckForSortedArray {
         boolean descendingOrderCheck = arr[0] > arr[1];
 
         for (int i = 0; i < arr.length; i++) {
-            for (int j = i + 1; j < arr.length ; j++) {
-                // if checking for descending order
-                if (descendingOrderCheck && arr[i] < arr[j]){
-                    isSorted = false;
-                    break;
-                } else if(!descendingOrderCheck && arr[i] > arr[j]) {
-                    isSorted = false;
-                    break;
-                }
+            // if checking for descending order
+            if (descendingOrderCheck && arr[i] < arr[i + 1]) {
+                isSorted = false;
+                break;
+            } else if(!descendingOrderCheck && arr[i] > arr[i + 1]) {
+                isSorted = false;
+                break;
             }
+
         }
 
         System.out.println(isSorted);
