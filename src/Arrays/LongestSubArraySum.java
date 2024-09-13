@@ -54,7 +54,7 @@ public class LongestSubArraySum {
     }
 
     public static void main(String[] args) {
-    int[] arr ={1,9,2,3,5,1,1,1,1,6};
+        int[] arr ={1,9,2,3,5,1,1,1,1,6};
         int sum = 10;
         longestSubArraySum(arr, sum);
     }
