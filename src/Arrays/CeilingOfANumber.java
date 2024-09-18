@@ -48,7 +48,7 @@ public class CeilingOfANumber {
     }
 
     public static void main(String[] args) {
-        int[] arr = {1, 4, 6, 9, 10, 13, 19}; // { 13, 11, 10, 4, 3, 1} {1, 4, 6, 9, 10, 13, 19}
+        int[] arr = {1, 4, 6, 9, 10, 13, 19}; // { 13, 11, 10, 4, 3, 1} {1, 4, 6, 9, 10, 13, 19} {'a', 'b', 'c', 'd', 'e'}
         int key = 0;
         int ceilingOfNo = findCeiling(arr, key);
         int floorOfNo = findFloor(arr, key);
