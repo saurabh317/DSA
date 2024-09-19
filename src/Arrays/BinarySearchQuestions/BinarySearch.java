@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.BinarySearchQuestions;
 
 public class BinarySearch {
     static void binarySearch (int[] arr, int key) {

@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.BinarySearchQuestions;
 
 public class SearchNumberInInfiniteArray {
     public static void search (int[] arr, int target) {

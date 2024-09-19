@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.BinarySearchQuestions;
 
 public class CeilingOfANumber {
     static int findCeiling (int[] arr, int key) {

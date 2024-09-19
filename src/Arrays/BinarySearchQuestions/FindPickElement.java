@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.BinarySearchQuestions;
 
 public class FindPickElement {
     public static void findPickElement (int[] arr) {

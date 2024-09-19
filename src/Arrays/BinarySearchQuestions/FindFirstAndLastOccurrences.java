@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.BinarySearchQuestions;
 
 import java.util.Arrays;
 
