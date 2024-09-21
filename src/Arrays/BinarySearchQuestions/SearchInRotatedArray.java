@@ -21,12 +21,13 @@ public class SearchInRotatedArray {
             if (mid > start && arr[mid] < arr[mid - 1]) {
                 return mid - 1;
             }
-            if (arr[mid] > arr[start]) {
-                start = mid + 1;
-            }
             if (arr[mid] <= arr[start]) {
                 end = mid - 1;
             }
+            if (arr[mid] > arr[start]) {
+                start = mid + 1;
+            }
+
         }
         return -1;
 
@@ -64,7 +65,7 @@ public class SearchInRotatedArray {
     }
 
     public static void main(String[] args) {
-        int [] arr = {18, 19, 100, 1, 2, 3, 4, 5 , 6, 7, 8, 9, 9, 10}; //{6, 7, 8, 9, 10, 11, 2, 3, 4, 5}
-        System.out.println(searchInRotateArray(arr, 100));
+        int [] arr = {3,4,5,6,1,2}; //{6, 7, 8, 9, 10, 11, 2, 3, 4, 5}
+        System.out.println(searchInRotateArray(arr, 2));
     }
 }
