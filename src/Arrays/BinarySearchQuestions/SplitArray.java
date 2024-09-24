@@ -2,10 +2,12 @@ package Arrays.BinarySearchQuestions;
 
 public class SplitArray {
     public static void main(String[] args) {
-
+        int[] nums = {7,2,5,10,8};
+        int k = 2;
+        System.out.println(splitArray(nums, k));
     }
 
-    public int splitArray(int[] nums, int k) {
+    public static int splitArray(int[] nums, int k) {
         // start will contain the min sum of the sub array in any case
         // end will contain the total sum of the all values inside the array
         // so here we are creating a range of numbers, and  we'll search the potential answer in this range using BS
