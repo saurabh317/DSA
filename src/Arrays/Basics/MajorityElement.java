@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.Basics;
 
 public class MajorityElement {
     static void findMajority (int[] arr) {

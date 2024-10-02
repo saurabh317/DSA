@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.Basics;
 
 public class LinearSearch {
     static void searchKey(int[] arr, int key) {

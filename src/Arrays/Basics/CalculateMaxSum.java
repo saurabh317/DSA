@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.Basics;
 
 public class CalculateMaxSum {
     static void sum (int[][] arr) {

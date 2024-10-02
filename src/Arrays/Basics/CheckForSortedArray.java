@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.Basics;
 
 public class CheckForSortedArray {
     static void isArraySorted(int[] arr){

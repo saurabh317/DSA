@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.Basics;
 
 public class SecondLargestElement {
     static int secondLargestElement(int[] arr) {

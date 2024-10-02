@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.Basics;
 
 public class FindEvenNumberOfDigits {
     static void countEvenDigits(int[] arr) {

@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.Basics;
 
 public class MaxConsecutive {
     static int maxConsecutive(int[] arr) {

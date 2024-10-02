@@ -1,6 +1,6 @@
 // Input Format: N = 3, k = 5, array[] = {2,3,5}
 // Result: {2,3}
-package Arrays;
+package Arrays.Basics;
 import java.util.ArrayList;
 
 public class LongestSubArraySum {
