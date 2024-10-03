@@ -1,10 +1,14 @@
 package Arrays.Sorting;
 
+// Problem Statement : Implement the Bubble Sort algorithm to sort an array of integers in ascending order.
+
+/* Approach : first we will find the largest element in the array then we will swap it with the last element of the array
+by doing this we are pushing the greatest element to the end , and again we will use the same approach for the remaining array
+*/
+
 import java.util.Arrays;
 
 public class SelectionSort {
-    // algorithm: first we will find the largest element in the array then we will swap it with the last element of the array
-    // by doing this we are pushing the greatest element to the end , and again we will use the same approach for the remaining array
     public static int findMax (int[] arr, int start, int end) {
         int max = 0;
         for (int i = start; i < end ; i++) {

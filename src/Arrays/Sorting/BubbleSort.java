@@ -1,5 +1,7 @@
 package Arrays.Sorting;
 
+// Problem Statement : Implement the Bubble Sort algorithm to sort an array of integers in ascending order.
+
 import java.util.Arrays;
 
 public class BubbleSort { // bubble sort is often know as sinking or exchange sort
@@ -24,7 +26,7 @@ public class BubbleSort { // bubble sort is often know as sinking or exchange so
     }
 
     public static void main(String[] args) {
-        int[] arr = {1, 2,3, 4};// {1, 2,3, 4} {3,1,5,4,2}
+        int[] arr = {3,1,5,4,2};
         System.out.println((Arrays.toString(sortArr(arr))));
     }
 }

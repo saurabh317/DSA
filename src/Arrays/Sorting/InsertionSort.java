@@ -1,13 +1,16 @@
 package Arrays.Sorting;
 
+// Problem Statement : Implement the Bubble Sort algorithm to sort an array of integers in ascending order.
+
+/* Approach: with each iteration we have to insert the next element to its appropriate position in the array
+i = 0 (iteration) in this iteration we will place the arr[i+1] element to its sorted position in the array
+i = 1 (iteration) in this iteration we will place the arr[i+1] element to its sorted position in the array
+so on by doing this in every iteration basically we are sorting the array till (i+1)
+*/
+
 import java.util.Arrays;
 
 public class InsertionSort {
-    // approach: with each iteration we have to insert the next element to its appropriate position in the array
-    // i = 0 (iteration) in this iteration we will place the arr[i+1] element to its sorted position in the array
-    // i = 1 (iteration) in this iteration we will place the arr[i+1] element to its sorted position in the array
-    // so on by doing this in every iteration basically we are sorting the array till (i+1)
-
     public static void insertElement(int[] arr, int i) {
         // we need to place arr[i+1] in such a way that arr[i] < arr[i+1] && arr[i+1] < arr[i+2]
 
