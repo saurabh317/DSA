@@ -4,7 +4,7 @@ package Arrays.Sorting;
 input: [3, 1, 0]
 output: 2 is the missing no.
 
-Approach:- first we have to find the value of n (largest no. in array), after that we will sort the array through cycle sort
+Approach:- first we have to find the value of n (no. of elements in the array), after that we will sort the array through cycle sort
 then we will try to match element with their respective index, and whichever element is not at their respective index ,that's our ans.
 */
 
@@ -13,16 +13,11 @@ import java.util.Arrays;
 public class MissingNumber {
     public static int findMissingNumber (int[] arr) {
         // first find the n in the array i.e. the largest number in the array
-        int n = arr[0];
-        for (int i = 1; i < arr.length ; i++) {
-            if (arr[i] > n) {
-                n = arr[i];
-            }
-        }
+        int n = arr.length;
 
         // after finding the n , now place all the elements to their correct place
         int i = 0;
-        while (i < arr.length) {
+        while (i < n) {
             int value = arr[i];
             if (i != value) {
                 // swap it with its correct index
@@ -41,7 +36,7 @@ public class MissingNumber {
 
         // now check if all the elements are at correct index and whichever element is not , return it (that's our ans)
         for (int j = 0; j <= n ; j++) { //{0, 1, 3}
-            if(j != arr[j]) {
+            if (j == n || j != arr[j]) {
                 return j;
             }
         }
@@ -49,7 +44,7 @@ public class MissingNumber {
         return -1;
     }
     public static void main(String[] args) {
-        int[] arr = {3, 1, 0, 2, 8, 9, 6, 4, 5};
+        int[] arr = {0, 1};//{3, 1, 0, 2, 8, 9, 6, 4, 5};
         System.out.println(findMissingNumber(arr));
     }
 }
