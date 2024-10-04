@@ -36,7 +36,7 @@ public class InsertionSort {
     }
 
     public static void main(String[] args) {
-        int[] arr = {4, 1, 3, 16, 9, 17, 23, 21, 20};
+        int[] arr = {4, 1, 1, -1, 3, 16, 9, 17, 23, 21, 20};
         System.out.println(Arrays.toString(sortArr(arr)));
     }
 }
