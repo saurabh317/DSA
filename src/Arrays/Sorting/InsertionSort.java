@@ -1,10 +1,10 @@
 package Arrays.Sorting;
 
-// Problem Statement : Implement the Bubble Sort algorithm to sort an array of integers in ascending order.
+// Problem Statement : Implement the insertion Sort algorithm to sort an array of integers in ascending order.
 
 /* Approach: with each iteration we have to insert the next element to its appropriate position in the array
-i = 0 (iteration) in this iteration we will place the arr[i+1] element to its sorted position in the array
-i = 1 (iteration) in this iteration we will place the arr[i+1] element to its sorted position in the array
+i = 0 (iteration) in this iteration we will place the arr[1] element to its sorted position in the array
+i = 1 (iteration) in this iteration we will place the arr[2] element to its sorted position in the array
 so on by doing this in every iteration basically we are sorting the array till (i+1)
 */
 
