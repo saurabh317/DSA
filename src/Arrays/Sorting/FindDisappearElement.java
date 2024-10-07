@@ -25,7 +25,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class FindDisappearElement {
-    public static List<Integer> findDisappearedNumbers(int[] array) {
+    public static List<Integer> findDisappearedAndDuplicateNumbers(int[] array) {
         List<Integer> result = new ArrayList<>();
         int n = array.length;
         int i = 0;
@@ -42,21 +42,23 @@ public class FindDisappearElement {
                 i++;
             }
         }
+        int [] duplicates = new int[1];
 
         for (int j = 0; j < n ; j++) {
             if (array[j] != j+1) {
                 result.add(j+1);
+                duplicates = new int[]{array[j]};
             }
 
         }
 
-        System.out.println(Arrays.toString(array));
+        System.out.println(Arrays.toString(duplicates));
 
         return result;
     }
     public static void main(String[] args) {
         int[] array = {4,3,2,7,8,2,3,1};
-        System.out.println(findDisappearedNumbers(array));
+        System.out.println(findDisappearedAndDuplicateNumbers(array));
 
     }
 }
