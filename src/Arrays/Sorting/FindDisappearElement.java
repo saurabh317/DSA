@@ -1,7 +1,7 @@
 package Arrays.Sorting;
 
 /*Problem statement: - Given an array numbs of n integers where numbs[i] is in the range [1, n],
-return an array of all the integers in the range [1, n] that do not appear in numbs.
+return an array of all the integers in the range [1, n] that do not appear in numbs..
 
 Approach :- we will sort the elements to their respective position and check for which ever
 
