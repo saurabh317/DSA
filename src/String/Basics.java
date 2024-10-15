@@ -9,7 +9,7 @@ public class Basics {
         str.append('g');
         System.out.println(str);
     }
-    
+
     public static void takeInputAndPrint () {
         System.out.println("enter your name");
         Scanner sc = new Scanner(System.in);
