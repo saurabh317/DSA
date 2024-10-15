@@ -3,6 +3,13 @@ package String;
 import java.util.Scanner;
 
 public class Basics {
+    public static void sb () {// String builder : - we can modify strings created using string builder
+        StringBuilder str = new StringBuilder("harry");
+        System.out.println(str.charAt(0));
+        str.append('g');
+        System.out.println(str);
+    }
+    
     public static void takeInputAndPrint () {
         System.out.println("enter your name");
         Scanner sc = new Scanner(System.in);
@@ -28,7 +35,8 @@ public class Basics {
         System.out.println(name3 == name4); // this is returning false coz every time we are creating a new obj
 
 
-        takeInputAndPrint();
-        preetyPrinting();
+//        takeInputAndPrint();
+//        preetyPrinting();
+        sb();
     }
 }
